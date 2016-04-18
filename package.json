@@ -1,6 +1,6 @@
 {
   "name": "event2log",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Translates events to human-readable log",
   "keywords": [
     "logging",
@@ -11,6 +11,25 @@
     "url": "https://github.com/jue89/node-event2log.git"
   },
   "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha",
+    "pretest": "jshint *.js"
+  },
   "author": "Jue <me@jue.yt>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "jshint": "^2.9.1",
+    "mocha": "^2.3.4",
+    "mockery": "^1.4.0"
+  },
+  "jshintConfig": {
+    "esversion": 6,
+    "node": true,
+    "strict": true,
+    "varstmt": true,
+    "loopfunc": true
+  }
 }
